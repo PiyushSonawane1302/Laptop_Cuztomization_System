@@ -1,2 +1,3 @@
 #PPL Project
-Laptop Configuration System PPL Project 
+
+Laptop Configuration System 
