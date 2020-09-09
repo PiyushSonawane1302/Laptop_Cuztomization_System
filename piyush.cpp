@@ -67,7 +67,7 @@ public:
 
 void Features::select_os()
 {
-    cout<<"\n ** Please Select The Operating system you want in your Laptop : "<<endl;
+    cout<<"\n ** Please Select The Operating system you want in your Laptop : \n"<<endl;
     cout<<"\n 1.Windows "<<endl;
     cout<<"\n 2.MAC Os "<<endl;
     cout<<"\n 3.Exit"<<endl;
@@ -86,12 +86,12 @@ void Features::select_os()
     case 3:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
 }
 
@@ -100,7 +100,7 @@ void Features::select_os()
 void Features::select_processor()
 {
     if(os==1){
-    cout<<"\n\n **Select the Processor : "<<endl;
+    cout<<"\n\n **Select the Processor : \n"<<endl;
     cout<<"1. Intel i3"<<endl;
     cout<<"2. Intel i5"<<endl;
     cout<<"3. Intel i7"<<endl;
@@ -139,18 +139,18 @@ void Features::select_processor()
     case 7:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
     }
 
     else if(os==2)
     {
-    cout<<"\n\n **Select the Processor : "<<endl;
+    cout<<"\n\n **Select the Processor : \n"<<endl;
     cout<<"1. Intel i3"<<endl;
     cout<<"2. Intel i5"<<endl;
     cout<<"3. Intel i7"<<endl;
@@ -184,7 +184,7 @@ void Features::select_processor()
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
     }
 }
@@ -196,7 +196,7 @@ void Features::select_ram()
 {
 
 if(os==1){
-    cout<<"\n\n **Select the RAM : "<<endl;
+    cout<<"\n\n **Select the RAM : \n"<<endl;
     cout<<"1. 4 GB"<<endl;
     cout<<"2. 8 GB"<<endl;
     cout<<"3. 16 GB"<<endl;
@@ -225,11 +225,11 @@ if(os==1){
     case 5:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
 }
 
@@ -255,11 +255,11 @@ if(os==2)
     case 3:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
 
 }
@@ -270,7 +270,7 @@ if(os==2)
 void Features::select_graphics_card()
 {
     if(os==1){
-    cout<<"\n\n **Select the Graphics card  : "<<endl;
+    cout<<"\n\n **Select the Graphics card  : \n"<<endl;
     cout<<"1. 2 GB"<<endl;
     cout<<"2. 4 GB"<<endl;
     cout<<"3. 6 GB"<<endl;
@@ -309,17 +309,17 @@ void Features::select_graphics_card()
     case 7:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
     }
     else if(os==2)
     {
-        cout<<"\n\n **Select the Graphics card  : "<<endl;
+        cout<<"\n\n **Select the Graphics card  : \n"<<endl;
         cout<<"1. 4 GB"<<endl;
         cout<<"2. Don't Want graphics Card "<<endl;
         cout<<"3. Exit"<<endl;
@@ -338,12 +338,12 @@ void Features::select_graphics_card()
     case 3:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
     }
 }
@@ -354,7 +354,7 @@ void Features::select_memory()
 {
     if(os==1){
     //for selection of the memory type
-    cout<<" What do you Want in Your Memory ? "<<endl;
+    cout<<" What do you Want in Your Memory ? \n"<<endl;
     cout<<"\n 1.SSD"<<endl;
     cout<<"\n 2.HDD"<<endl;
     cout<<"\n 3.Both SSD & HDD"<<endl;
@@ -380,7 +380,7 @@ void Features::select_memory()
         else if(ssd==5){
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
     }
@@ -403,7 +403,7 @@ void Features::select_memory()
         else{
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
 
@@ -425,12 +425,12 @@ void Features::select_memory()
         else{
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
    }
    else
-    exit(1);
+    exit(0);
     }
 
 
@@ -438,7 +438,7 @@ void Features::select_memory()
 
     else if(os==2)
     {
-    cout<<" What do you Want in Your Memory ? "<<endl;
+    cout<<" What do you Want in Your Memory ? \n"<<endl;
     cout<<"\n 1.SSD"<<endl;
     cout<<"\n 2.Exit"<<endl;
     cout<<"\n Enter your Choice : ";
@@ -459,11 +459,11 @@ void Features::select_memory()
         else if(ssd==4){
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
         else
-      exit(1);
+      exit(0);
     }
 
 }
@@ -474,7 +474,7 @@ void Features::select_laptop_price()
 {
     if(os==1){
     //select price of laptops
-    cout<<"\n\n **Select the Price Range : "<<endl;
+    cout<<"\n\n **Select the Price Range : \n"<<endl;
     cout<<"1. Rs. 20,000 and Below"<<endl;
     cout<<"2. Rs. 20,000 - Rs.30,000"<<endl;
     cout<<"3. Rs. 30,000 - Rs.40,000"<<endl;
@@ -503,12 +503,12 @@ void Features::select_laptop_price()
     else{
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
       }
     }
     else if(os==2)
     {
-    cout<<"\n\n **Select the Price Range : "<<endl;
+    cout<<"\n\n **Select the Price Range : \n "<<endl;
     cout<<"1. Rs. 90,000 - 1,00,000"<<endl;
     cout<<"2. Exit"<<endl;
     cout<<"Enter Your Choice : ";
@@ -519,7 +519,7 @@ void Features::select_laptop_price()
     else if(laptop_price==2){
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
       }
 
     }
@@ -528,7 +528,7 @@ void Features::select_laptop_price()
 void Features::select_laptop_brand()
 {
     if(os==1){
-    cout<<"\n\n **Select the Brand  : "<<endl;
+    cout<<"\n\n **Select the Brand  : \n"<<endl;
     cout<<"1. HP "<<endl;
     cout<<"2. Dell"<<endl;
     cout<<"3. Lenovo"<<endl;
@@ -556,7 +556,7 @@ void Features::select_laptop_brand()
     else{
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
     }
     }
     else if(os==2)
@@ -819,7 +819,6 @@ int main()
 
 
     cout<<"\n\n\n\n * Thank you Visit Again :) !!!! "<<endl;
-
     cout<<"\n * Developed By ==> "<<endl;
     cout<<"\n   S.Y Information Technology Department !!!!"<<endl;
     cout<<"\n   G.H.Raisoni College of Engineering and Management,Wagholi,Pune .";
