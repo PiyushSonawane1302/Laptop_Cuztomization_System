@@ -1,2 +1,2 @@
-# piyush1302PPL
+#PPL Project
 Laptop Configuration System PPL Project 
