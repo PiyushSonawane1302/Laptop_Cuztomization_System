@@ -86,12 +86,12 @@ void Features::select_os()
     case 3:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
 }
 
@@ -139,12 +139,12 @@ void Features::select_processor()
     case 7:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
     }
 
@@ -179,12 +179,12 @@ void Features::select_processor()
     case 5:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-        exit(1);
+        exit(0);
     }
     }
 }
@@ -225,11 +225,11 @@ if(os==1){
     case 5:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
 }
 
@@ -255,11 +255,11 @@ if(os==2)
     case 3:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
 
 }
@@ -309,12 +309,12 @@ void Features::select_graphics_card()
     case 7:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
     }
     else if(os==2)
@@ -343,7 +343,7 @@ void Features::select_graphics_card()
 
     default :
         cout<<"\n Enter valid choice ";
-         exit(1);
+         exit(0);
     }
     }
 }
@@ -380,7 +380,7 @@ void Features::select_memory()
         else if(ssd==5){
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
     }
@@ -403,7 +403,7 @@ void Features::select_memory()
         else{
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
 
@@ -425,12 +425,12 @@ void Features::select_memory()
         else{
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
    }
    else
-    exit(1);
+    exit(0);
     }
 
 
@@ -459,11 +459,11 @@ void Features::select_memory()
         else if(ssd==4){
             cout<<"\n Terminated Successfully !!"<<endl;
             cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-            exit(1);
+            exit(0);
         }
 
         else
-      exit(1);
+      exit(0);
     }
 
 }
@@ -503,7 +503,7 @@ void Features::select_laptop_price()
     else{
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
       }
     }
     else if(os==2)
@@ -519,7 +519,7 @@ void Features::select_laptop_price()
     else if(laptop_price==2){
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
       }
 
     }
@@ -556,7 +556,7 @@ void Features::select_laptop_brand()
     else{
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
     }
     }
     else if(os==2)
