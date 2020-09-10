@@ -577,7 +577,7 @@ void Features::display_features()
     if(os==1){
         cout<<"\n Operating System ==> Windows "<<endl;
 
-    //Prccessor
+    //Processor
     if(processor==1)
         cout<<"\n Processor ==> Intel i3"<<endl;
     else if(processor==2)
@@ -831,12 +831,10 @@ cout<<"\n * Suggestions For Laptop ==> \n"<<endl;
        cout<<"\n      Ratings - 4.7/5.0"<<endl;
        cout<<"\n      Rs. 92,990"<<endl;
 
-
        cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)  "<<endl;
        cout<<"\n     (13.3 inch, Space Grey, 1.37 kg) "<<endl;
        cout<<"\n      Ratings - 4.6/5.0"<<endl;
        cout<<"\n      Rs. 1,54,990"<<endl;
-
 
        cout<<"\n\n  *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  "<<endl;
        cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
