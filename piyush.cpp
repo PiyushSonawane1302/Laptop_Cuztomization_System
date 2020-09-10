@@ -539,6 +539,8 @@ void Features::select_laptop_brand()
     cout<<"8. Exit"<<endl;
     cout<<"Enter Your Choice : ";
     cin>>laptop_brand;
+
+
     if(laptop_brand==1)
         cout<<"\n Brand Selected ==> HP "<<endl;
     else if(laptop_brand==2)
@@ -684,7 +686,7 @@ void Features::display_features()
    //ram mac
     if(ram==1)
        cout<<"\n RAM ==> 8 GB"<<endl;
-    else if(ram==3)
+    else if(ram==2)
        cout<<"\n RAM ==> 16 GB"<<endl;
    // graphics card
     if(graphics_card==1)
@@ -712,16 +714,21 @@ void Features::display_features()
 void Features::laptop_suggestions()
 {
    //Suggested Laptops MAc Os and Windows
-   cout<<"\n * Suggestions Related to your Specifications ==> "<<endl;
+cout<<"\n * Suggestions For Laptop ==> \n"<<endl;
+
 
    if(os==2 && processor==1 && ram==1 && ssd==1 && graphics_card==2 &&laptop_price==1 )
    {
+       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)  "<<endl;
        cout<<"\n     (13.3 inch, Space Grey, 1.37 kg) "<<endl;
        cout<<"\n      Ratings - 4.6/5.0"<<endl;
        cout<<"\n      Rs. 1,54,990"<<endl;
    }
    else if(os==2 && processor==1 && ram==1 && ssd==1 && graphics_card==2 && laptop_price==1){
+
+      cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
 
        cout<<"\n\n  *Apple MacBook Pro Core i3 10th Gen (8 GB/256 GB SSD)  "<<endl;
        cout<<"\n     (13.3 inch, Space Grey, 1.29 kg) "<<endl;
@@ -731,6 +738,8 @@ void Features::laptop_suggestions()
 
    else if(os==2 && processor==3 &&ram==2&& ssd==2 && graphics_card==2 &&laptop_price==1){
 
+        cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n\n  *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  "<<endl;
        cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
        cout<<"\n      Ratings - 4.7/5.0"<<endl;
@@ -739,6 +748,8 @@ void Features::laptop_suggestions()
 
    else if(os==2 && processor==2 &&ram==2 && ssd==2 && graphics_card==2 &&laptop_price==1)
    {
+       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n\n  *Apple MacBook Pro Core i5 10th Gen (16 GB/512 GB SSD)  "<<endl;
        cout<<"\n     (13 inch, Space Grey, 1.4 kg) "<<endl;
        cout<<"\n      Ratings - 4.9/5.0"<<endl;
@@ -747,6 +758,8 @@ void Features::laptop_suggestions()
 
    else if(os==2 && processor==2 &&ram==1 && ssd==2 && graphics_card==2 &&laptop_price==1)
    {
+       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/512 GB SSD)  "<<endl;
        cout<<"\n     (13.3 inch, Space Grey, 1.4 kg) "<<endl;
        cout<<"\n      Ratings - 4.7/5.0"<<endl;
@@ -756,6 +769,8 @@ void Features::laptop_suggestions()
    else if(os==2 && processor==4 &&ram==2 && ssd==3 &&laptop_price==1 && graphics_card==1)
 
    {
+        cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n\n  *Apple MacBook Pro Core i9 9th Gen (16 GB/1 TB SSD/4 GB Graphics)  "<<endl;
        cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
        cout<<"\n      Ratings - 4.7/5.0"<<endl;
@@ -763,18 +778,24 @@ void Features::laptop_suggestions()
    }
 
    else if(os==2 && processor==3 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
+         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
       cout<<"\n\n  * Apple MacBook Pro Corei7 9th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
        cout<<"\n      (16 inch, Space Grey, 2 kg)"<<endl;
        cout<<"\n       Rating 4.7/5.0"<<endl;
        cout<<"\n       Rs. 1,99,900"<<endl;
    }
    else if(os==2 && processor==4 && ram==2 && ssd==3 && graphics_card==1 && laptop_price==1){
+         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
        cout<<"\n    * Apple MacBook Pro Core i9 9th Gen (16 GB/1 TB SSD/4 GB Graphics)"<<endl;
        cout<<"\n      (16 inch, Silver, 2 kg)"<<endl;
        cout<<"\n      Ratings - 4.67/5.0"<<endl;
        cout<<"\n      Rs.2,24,900"<<endl;
    }
    else if(os==2 && processor==3 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
+         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
       cout<<"\n\n  * Apple MacBook Pro Corei7 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
        cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
        cout<<"\n       Rating 4/5.0"<<endl;
@@ -782,6 +803,8 @@ void Features::laptop_suggestions()
    }
 
    else if(os==2 && processor==2 && ram==2 && ssd==3 && graphics_card==2&& laptop_price==1){
+         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
       cout<<"\n\n  * Apple MacBook Pro Corei5 10th Gen (16 GB/1 TB SSD )"<<endl;
        cout<<"\n      (13 inch, Space Grey, 1.4 kg)"<<endl;
        cout<<"\n       Rating 4.9/5.0"<<endl;
@@ -789,12 +812,44 @@ void Features::laptop_suggestions()
    }
 
    else if(os==2 && processor==4 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
+         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+
       cout<<"\n\n  * Apple MacBook Pro Corei9 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
        cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
        cout<<"\n       Rating 4.1/5.0"<<endl;
        cout<<"\n       Rs. 2,09,990"<<endl;
 
    }
+
+
+   else
+   {
+       cout<<"\n * Laptop Related to your Specifications ==> \n"<<endl;
+
+       cout<<"\n\n  *Apple MacBook Pro Core i3 10th Gen (8 GB/256 GB SSD)  "<<endl;
+       cout<<"\n     (13.3 inch, Space Grey, 1.29 kg) "<<endl;
+       cout<<"\n      Ratings - 4.7/5.0"<<endl;
+       cout<<"\n      Rs. 92,990"<<endl;
+
+
+       cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)  "<<endl;
+       cout<<"\n     (13.3 inch, Space Grey, 1.37 kg) "<<endl;
+       cout<<"\n      Ratings - 4.6/5.0"<<endl;
+       cout<<"\n      Rs. 1,54,990"<<endl;
+
+
+       cout<<"\n\n  *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  "<<endl;
+       cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
+       cout<<"\n      Ratings - 4.7/5.0"<<endl;
+       cout<<"\n      Rs. 1,99,900"<<endl;
+
+       cout<<"\n\n  * Apple MacBook Pro Corei9 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
+       cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
+       cout<<"\n       Rating 4.1/5.0"<<endl;
+       cout<<"\n       Rs. 2,09,990"<<endl;
+
+   }
+
 }
 
 // Main Function
