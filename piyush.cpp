@@ -179,7 +179,7 @@ void Features::select_processor()
     case 5:
         cout<<"\n Terminated Successfully !!"<<endl;
         cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(1);
+        exit(0);
         break;
 
     default :
