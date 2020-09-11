@@ -677,7 +677,7 @@ void Features::display_features()
     //processor mac
     if(processor==1)
         cout<<"\n Processor ==> Intel i3"<<endl;
-     if(processor==2)
+     else if(processor==2)
         cout<<"\n Processor ==> Intel i5"<<endl;
      else if(processor==3)
         cout<<"\n Processor ==> Intel i7"<<endl;
