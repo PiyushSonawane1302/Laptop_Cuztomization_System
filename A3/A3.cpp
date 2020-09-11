@@ -1,6 +1,8 @@
 // Assignment 3
 
-/* here we have used the Constructor */
+/* here we have used the Constructor Features which takes input name and
+lastname and displays fullname.
+In this we have used Default Contructor */
 
 #include<iostream>
 #include<stdlib.h>
