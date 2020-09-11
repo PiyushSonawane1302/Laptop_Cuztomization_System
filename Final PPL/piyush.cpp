@@ -592,15 +592,14 @@ void Features::display_features()
         cout<<"\n Processor ==> Ryzen 7"<<endl;
 
     //RAM
+
     if(ram==1)
-        cout<<"\n RAM ==> 2 GB"<<endl;
-    else if(ram==2)
         cout<<"\n RAM ==> 4 GB"<<endl;
-    else if(ram==3)
+    else if(ram==2)
         cout<<"\n RAM ==> 8 GB"<<endl;
-    else if(ram==4)
+    else if(ram==3)
         cout<<"\n RAM ==> 16 GB"<<endl;
-    else if(ram==5)
+    else if(ram==4)
         cout<<"\n RAM ==> 32 GB"<<endl;
 
     //graphics card
