@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d039f9ded986403c3ae72ab47f1e582f03d9c2a
 // Assignment 2 PPL
 
 /* Here we have created the class named features which has Features
@@ -147,6 +150,8 @@ if(os==1){
     }
     }
 }
+<<<<<<< HEAD
+=======
 
 void Features::select_ram()
 {
@@ -285,7 +290,151 @@ int main()
     f.select_os();
     f.select_processor();
     f.select_ram();
+    system("cls");
+    f.display_features();
+    cout<<"\n\n * Thank you Visit Again :) !!!! "<<endl;
+}
+>>>>>>> 2d039f9ded986403c3ae72ab47f1e582f03d9c2a
+
+
+<<<<<<< HEAD
+if(os==1){
+    cout<<"\n\n **Select the RAM : \n"<<endl;
+    cout<<"1. 4 GB"<<endl;
+    cout<<"2. 8 GB"<<endl;
+    cout<<"3. 16 GB"<<endl;
+    cout<<"4. 32 GB"<<endl;
+    cout<<"5. Exit"<<endl;
+    cout<<"\n Enter Your Choice : ";
+    cin>>ram;
+    switch(ram)
+    {
+    case 1:
+
+        cout<<"\n * You have Selected Your RAM ==> 4 GB "<<endl;
+        break;
+    case 2:
+
+       cout<<"\n * You have Selected Your RAM ==> 8 GB "<<endl;
+        break;
+    case 3:
+
+        cout<<"\n * You have Selected Your RAM ==> 16 GB "<<endl;
+        break;
+    case 4:
+
+        cout<<"\n * You have Selected Your RAM ==> 32 GB "<<endl;
+        break;
+    case 5:
+        cout<<"\n Terminated Successfully !!"<<endl;
+        cout<<"\n Thank You Visit Again !!!!\n"<<endl;
+        exit(0);
+        break;
+    default :
+        cout<<"\n Enter valid choice ";
+         exit(0);
+    }
+}
+
+if(os==2)
+{
+    cout<<"\n\n **Select the RAM : "<<endl;
+    cout<<"1. 8 GB"<<endl;
+    cout<<"2. 16 GB"<<endl;
+    cout<<"3. Exit"<<endl;
+    cout<<"\n Enter Your Choice : ";
+    cin>>ram;
+    switch(ram)
+    {
+    case 1:
+
+       cout<<"\n * You have Selected Your RAM ==> 8 GB "<<endl;
+        break;
+    case 2:
+
+        cout<<"\n * You have Selected Your RAM ==> 16 GB "<<endl;
+        break;
+
+    case 3:
+        cout<<"\n Terminated Successfully !!"<<endl;
+        cout<<"\n Thank You Visit Again !!!!\n"<<endl;
+        exit(0);
+        break;
+    default :
+        cout<<"\n Enter valid choice ";
+         exit(0);
+    }
+
+}
+}
+
+
+void Features::display_features()
+{
+    cout<<"\n\n";
+    cout<<"\n * Your Selected Specifications are ==> \n"<<endl;
+
+ //OS
+    if(os==1){
+        cout<<"\n Operating System ==> Windows Os"<<endl;
+
+
+    //Processor
+    if(processor==1)
+        cout<<"\n Processor ==> Intel i3"<<endl;
+    else if(processor==2)
+        cout<<"\n Processor ==> Intel i5"<<endl;
+    else if(processor==3)
+        cout<<"\n Processor ==> Intel i7"<<endl;
+    else if(processor==4)
+        cout<<"\n Processor ==> Intel i9"<<endl;
+    else if(processor==5)
+        cout<<"\n Processor ==> Ryzen 5"<<endl;
+    else if(processor==6)
+        cout<<"\n Processor ==> Ryzen 7"<<endl;
+
+     //RAM
+    if(ram==1)
+        cout<<"\n RAM ==> 4 GB"<<endl;
+    else if(ram==2)
+        cout<<"\n RAM ==> 8 GB"<<endl;
+    else if(ram==3)
+        cout<<"\n RAM ==> 16 GB"<<endl;
+    else if(ram==4)
+        cout<<"\n RAM ==> 32 GB"<<endl;
+}
+    //for mac
+    else if(os==2){
+        cout<<"\n Operating System ==> MAC Os "<<endl;
+    if(processor==1)
+        cout<<"\n Processor ==> Intel i3"<<endl;
+     else if(processor==2)
+        cout<<"\n Processor ==> Intel i5"<<endl;
+     else if(processor==3)
+        cout<<"\n Processor ==> Intel i7"<<endl;
+     else if(processor==4)
+        cout<<"\n Processor ==> Intel i9"<<endl;
+
+     //ram mac
+    if(ram==1)
+       cout<<"\n RAM ==> 8 GB"<<endl;
+    else if(ram==2)
+       cout<<"\n RAM ==> 16 GB"<<endl;
+    }
+
+}
+int main()
+{
+    cout<<"\t\t***********************************"<<endl;
+    cout<<"\t\t*   Laptop Customization System   *"<<endl;
+    cout<<"\t\t***********************************"<<endl;
+    Features f; //object created
+    f.select_os();
+    f.select_processor();
+    f.select_ram();
 
     f.display_features();
     cout<<"\n\n * Thank you Visit Again :) !!!! "<<endl;
 }
+=======
+>>>>>>> 2d039f9ded986403c3ae72ab47f1e582f03d9c2a
