@@ -4,7 +4,7 @@
  of the laptop like Os,Ram ,Processor and that have the options for
  user to select his/her specification  */
 
-/*#include<iostream>
+#include<iostream>
 #include<stdio.h>
 using namespace std;
 
