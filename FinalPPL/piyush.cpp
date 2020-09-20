@@ -1,5 +1,5 @@
 /* Project Topic : Laptop Customization System
- Concepts Used in Program : 1.Class,Object
+ Concepts Used in Program : 1.Class and Object
                             2.Constructor
                             3.Single Inheritance
 */
