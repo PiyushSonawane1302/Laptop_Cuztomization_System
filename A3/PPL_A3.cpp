@@ -1,25 +1,24 @@
-// Assignment 3
-
-/* here we have used the Constructor Features which takes input name and
-lastname and displays fullname.
-In this we have used Default Contructor */
-
 #include<iostream>
-#include<stdlib.h>
-#include<string.h>
+#include<stdio.h>
+
+// Assignment-3
+
+/* Here we have used the Constructor Features which takes input name and
+     last name and displays full name.
+     In this part of project we have used the default constructor */
+
 using namespace std;
-class Features
+
+class User
 {
 private:
    string name;
    string lastname;
    string fn;
-   int os;
-   int processor;
-   int ram;
+
 
  public:
-     Features()//constructor used
+     User()//default constructor used
      {
          cout<<"\n * Enter the First name : ";
          cin>>name;
@@ -36,14 +35,22 @@ private:
         cout<<"\n\n **Hello "<<fn<<" Welcome to our Program !!!!"<<endl;
     }
 
-    void select_os();
-    void select_processor();
-    void select_ram();
-    void display_features();
 
 };
 
 
+class Features : public User //class named Features
+{
+   int os;
+    int processor;
+    int ram;
+public:
+
+    void select_os();
+    void select_processor();
+    void select_ram();
+    void display_features();
+};
 void Features::select_os() // member function
 {
     cout<<"\n ** Please Select The Operating system you want in your Laptop : \n"<<endl;
@@ -73,9 +80,6 @@ void Features::select_os() // member function
         exit(0);
     }
 }
-
-
-
 void Features::select_processor()
 {
 if(os==1){
@@ -294,14 +298,13 @@ void Features::display_features()
     else if(ram==2)
        cout<<"\n RAM ==> 16 GB"<<endl;
     }
-
 }
 int main()
 {
     cout<<"\t\t***********************************"<<endl;
     cout<<"\t\t*   Laptop Customization System   *"<<endl;
     cout<<"\t\t***********************************"<<endl;
-    Features f; //object
+    Features f; //object created
     f.fullname();
     f.display();
     f.select_os();
@@ -311,8 +314,4 @@ int main()
     f.display_features();
     cout<<"\n\n * Thank you Visit Again :) !!!! "<<endl;
 }
-
-
-
-
 
