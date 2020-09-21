@@ -30,12 +30,16 @@ private:
         fn=name+" "+lastname;
         return fn;
      }
+
      void display()
     {
         cout<<"\n\n **Hello "<<fn<<" Welcome to our Program !!!!"<<endl;
     }
 
-
+    ~User()//Destructor called
+    {
+        cout<<"\n\n User Destructed Successfully !!!!\n\n"<<endl;
+    }
 };
 
 
