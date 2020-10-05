@@ -7,8 +7,9 @@
 #include<iostream>
 #include<stdlib.h>
 #include<string.h>
+#define MAX 5
 using namespace std;
-class Laptop_configuration_System
+class User
 {
 private:
    string name;
@@ -17,7 +18,7 @@ private:
 
 
  public:
-     Laptop_configuration_System()//constructor used
+     User()//constructor used
      {
          cout<<"\n * Enter the First name : ";
          cin>>name;
@@ -38,7 +39,7 @@ private:
 
 
 
-class Features:public Laptop_configuration_System //Single Inheritance Class Feature Derived From Class User
+class Features:public User //Single Inheritance Class Feature Derived From Class User
 {
     int os;
     int processor;
@@ -59,7 +60,7 @@ public:
     void display_features();
     void laptop_suggestions();
     void select_laptop_price();
-    void select_laptop_brand();
+  //  void select_laptop_brand();
 
 };
 
@@ -525,7 +526,7 @@ void Features::select_laptop_price()
     }
 }
 
-void Features::select_laptop_brand()
+/*void Features::select_laptop_brand()
 {
     if(os==1){
     cout<<"\n\n **Select the Brand  : \n"<<endl;
@@ -566,7 +567,7 @@ void Features::select_laptop_brand()
         cout<<"\n Brand Selected ==> Apple "<<endl;
     }
 }
-
+*/
 
 void Features::display_features()
 {
@@ -849,12 +850,36 @@ cout<<"\n * Suggestions For Laptop ==> \n"<<endl;
 
 }
 
+class Brands {
+
+char b_name[10];
+
+public:
+
+void getdata();
+void b_display();
+};
+
+void Brands::getdata()
+{
+ cout<<"Enter the Name of Brands  : "<<endl;
+ cin>>b_name;
+}
+
+void Brands::b_display()
+{
+cout<<"\nBrands Selected : \n"<<endl;
+cout<<b_name;
+}
+
 // Main Function
 int main()
 {
     cout<<"\t\t***********************************"<<endl;
     cout<<"\t\t*   Laptop Customization System   *"<<endl;
     cout<<"\t\t***********************************"<<endl;
+
+
     Features f;
     f.fullname();
     f.display();
@@ -864,8 +889,22 @@ int main()
     f.select_graphics_card();
     f.select_memory();
     f.select_laptop_price();
-    f.select_laptop_brand();
-    system("cls");
+    //f.select_laptop_brand();
+   // system("cls");
+
+    int n,i;
+    Brands b[MAX];
+    cout<<"Enter the Number of Brands : "<<endl;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+    cout << "\n Enter Name of Brand : " << i << ":\n";
+    b[i].getdata();
+    }
+    for(i=1;i<=n;i++)
+    {
+    b[i].b_display();
+    }
     f.display_features();
     f.laptop_suggestions();
 

@@ -43,7 +43,7 @@ private:
 };
 
 
-class Features : public User //class named Features
+class Features //class named Features
 {
    int os;
     int processor;
@@ -308,9 +308,10 @@ int main()
     cout<<"\t\t***********************************"<<endl;
     cout<<"\t\t*   Laptop Customization System   *"<<endl;
     cout<<"\t\t***********************************"<<endl;
-    Features f; //object created
-    f.fullname();
-    f.display();
+    Features f;
+    User u;//object created
+    u.fullname();
+    u.display();
     f.select_os();
     f.select_processor();
     f.select_ram();
