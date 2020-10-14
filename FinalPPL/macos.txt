@@ -1,0 +1,53 @@
+* Some Suggested Laptops ==> 
+
+*Apple MacBook Pro Core i3 10th Gen (8 GB/256 GB SSD)  
+(13.3 inch, Space Grey, 1.29 kg) 
+Ratings - 4.7/5.0
+Rs. 92,990
+
+  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)
+(13.3 inch, Space Grey, 1.37 kg)
+Ratings - 4.6/5.0
+Rs. 1,54,990
+
+ *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD) 
+(16 inch, Space Grey, 2 kg)
+Ratings - 4.7/5.0
+Rs. 1,99,900"
+
+ * Apple MacBook Pro Corei9 8th Gen (16 GB/512 GB SSD /4 GB Graphics)
+(15.4 inch, Space Grey, 1.83 kg)
+Rating 4.1/5.0
+ Rs. 2,09,990"
+
+
+ *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  
+(16 inch, Space Grey, 2 kg) 
+Ratings - 4.7/5.0
+Rs. 1,99,900
+
+ *Apple MacBook Pro Core i5 10th Gen (16 GB/512 GB SSD)
+(13 inch, Space Grey, 1.4 kg) 
+Ratings - 4.9/5.0
+Rs. 1,74,900
+
+*Apple MacBook Pro Core i5 8th Gen (8 GB/512 GB SSD) 
+(13.3 inch, Space Grey, 1.4 kg)
+Ratings - 4.7/5.0
+Rs. 1,69,900
+
+*Apple MacBook Pro Core i9 9th Gen (16 GB/1 TB SSD/4 GB Graphics)
+(16 inch, Space Grey, 2 kg)
+Ratings - 4.7/5.0
+Rs. 2,24,900
+
+
+* Apple MacBook Pro Corei7 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
+(15.4 inch, Space Grey, 1.83 kg)
+Rating 4/5.0
+Rs. 2,39,900
+
+* Apple MacBook Pro Corei5 10th Gen (16 GB/1 TB SSD )
+(13 inch, Space Grey, 1.4 kg)
+Rating 4.9/5.0
+Rs. 1,94,900

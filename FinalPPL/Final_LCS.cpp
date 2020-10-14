@@ -1,17 +1,27 @@
 /* Project Topic : Laptop Customization System
  Concepts Used in Program : 1.Class and Object
-                            2.Constructor
+                            2.Constructor & Destructor
                             3.Single Inheritance
+                            4.Formatted Operations
+                            5.File handling concepts.
 */
+
+
 
 #include<iostream>
 #include<stdlib.h>
 #include<string.h>
+#include<fstream>
+#include<ctime>
 #define MAX 5
+
+
 using namespace std;
+
+
 class User
 {
-private:
+public:
    string name;
    string lastname;
    string fn;
@@ -30,9 +40,18 @@ private:
         fn=name+" "+lastname;
         return fn;
      }
+
      void display()
     {
         cout<<"\n\n **Hello "<<fn<<" Welcome to our Program !!!!"<<endl;
+    }
+
+    ~User()//Destructor called
+    {
+        cout<<"\n\n User Destructed Successfully !!!!\n\n"<<endl;
+        cout.width(82);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
     }
 
 };
@@ -50,7 +69,7 @@ class Features:public User //Single Inheritance Class Feature Derived From Class
     int hdd;
     int both;//both is used for SSD and HDD
     int laptop_price;
-    int laptop_brand;
+
 public:
     void select_os();
     void select_ram();
@@ -58,9 +77,9 @@ public:
     void select_graphics_card();
     void select_memory();
     void display_features();
-    void laptop_suggestions();
     void select_laptop_price();
-  //  void select_laptop_brand();
+    void filewrite();
+    void fileread();
 
 };
 
@@ -78,10 +97,16 @@ void Features::select_os()
     {
     case 1:
         cout<<"\n * You have Selected Your Os ==> windows Os"<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 2:
         cout<<"\n * You have Selected Your Os ==> MAC Os"<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 3:
@@ -116,26 +141,44 @@ void Features::select_processor()
     case 1:
 
         cout<<"\n * You have Selected Your Processor ==> Intel i3 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 2:
 
         cout<<"\n * You have Selected Your Processor ==> Intel i5 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 3:
 
         cout<<"\n * You have Selected Your Processor ==> Intel i7 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 4:
 
         cout<<"\n * You have Selected Your Processor ==> Intel i9 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 5:
 
         cout<<"\n * You have Selected Your Processor ==> AMD Ryzen 5 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 6:
 
         cout<<"\n * You have Selected Your Processor ==> AMD Ryzen 7 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 7:
         cout<<"\n Terminated Successfully !!"<<endl;
@@ -148,6 +191,8 @@ void Features::select_processor()
         exit(0);
     }
     }
+
+
 
     else if(os==2)
     {
@@ -163,18 +208,30 @@ void Features::select_processor()
     {
     case 1:
         cout<<"\n * You have Selected Your Processor ==> Intel i3 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 2:
         cout<<"\n * You have Selected Your Processor ==> Intel i5 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 3:
         cout<<"\n * You have Selected Your Processor ==> Intel i7 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 4:
         cout<<"\n * You have Selected Your Processor ==> Intel i9 "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 5:
@@ -189,6 +246,9 @@ void Features::select_processor()
     }
     }
 }
+
+
+
 
 
 
@@ -210,18 +270,30 @@ if(os==1){
     case 1:
 
         cout<<"\n * You have Selected Your RAM ==> 4 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 2:
 
        cout<<"\n * You have Selected Your RAM ==> 8 GB "<<endl;
+       cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 3:
 
         cout<<"\n * You have Selected Your RAM ==> 16 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 4:
 
         cout<<"\n * You have Selected Your RAM ==> 32 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 5:
         cout<<"\n Terminated Successfully !!"<<endl;
@@ -233,6 +305,10 @@ if(os==1){
          exit(0);
     }
 }
+
+
+
+
 
 if(os==2)
 {
@@ -247,10 +323,16 @@ if(os==2)
     case 1:
 
        cout<<"\n * You have Selected Your RAM ==> 8 GB "<<endl;
+       cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
     case 2:
 
         cout<<"\n * You have Selected Your RAM ==> 16 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 3:
@@ -265,6 +347,10 @@ if(os==2)
 
 }
 }
+
+
+
+
 
 
 
@@ -285,26 +371,44 @@ void Features::select_graphics_card()
     {
     case 1:
         cout<<"\n * You have Selected Your Graphics card ==> 2 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 2:
         cout<<"\n * You have Selected Your Graphics card ==> 4 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 3:
        cout<<"\n * You have Selected Your Graphics card ==> 6 GB "<<endl;
+       cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 4:
         cout<<"\n * You have Selected Your Graphics card ==> 8 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 5:
         cout<<"\n * You have Selected Your Graphics card ==> Integrated Graphics Card "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 6:
         cout<<"\n No Graphics card Selected."<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 7:
@@ -330,10 +434,16 @@ void Features::select_graphics_card()
     {
     case 1:
         cout<<"\n * You have Selected Your Graphics card ==> 4 GB "<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 2:
         cout<<"\n No Graphics card Selected."<<endl;
+        cout.width(45);
+        cout.fill('=');//formatted operation
+        cout<<"\n\n";
         break;
 
     case 3:
@@ -348,6 +458,11 @@ void Features::select_graphics_card()
     }
     }
 }
+
+
+
+
+
 
 
 
@@ -468,8 +583,13 @@ void Features::select_memory()
     }
 
 }
-
 }
+
+
+
+
+
+
 
 void Features::select_laptop_price()
 {
@@ -526,48 +646,11 @@ void Features::select_laptop_price()
     }
 }
 
-/*void Features::select_laptop_brand()
-{
-    if(os==1){
-    cout<<"\n\n **Select the Brand  : \n"<<endl;
-    cout<<"1. HP "<<endl;
-    cout<<"2. Dell"<<endl;
-    cout<<"3. Lenovo"<<endl;
-    cout<<"4. ASUS"<<endl;
-    cout<<"5. Acer"<<endl;
-    cout<<"6. Honor"<<endl;
-    cout<<"7. Alienware"<<endl;
-    cout<<"8. Exit"<<endl;
-    cout<<"Enter Your Choice : ";
-    cin>>laptop_brand;
 
 
-    if(laptop_brand==1)
-        cout<<"\n Brand Selected ==> HP "<<endl;
-    else if(laptop_brand==2)
-        cout<<"\n Brand Selected ==> Dell "<<endl;
-    else if(laptop_brand==3)
-        cout<<"\n Brand Selected ==> Lenovo "<<endl;
-    else if(laptop_brand==4)
-        cout<<"\n Brand Selected ==> ASUS "<<endl;
-    else if(laptop_brand==5)
-        cout<<"\n Brand Selected ==> Acer "<<endl;
-    else if(laptop_brand==6)
-        cout<<"\n Brand Selected ==> Honor "<<endl;
-    else if(laptop_brand==7)
-        cout<<"\n Brand Selected ==> Alienware "<<endl;
-    else{
-        cout<<"\n Terminated Successfully !!"<<endl;
-        cout<<"\n Thank You Visit Again !!!!\n"<<endl;
-        exit(0);
-    }
-    }
-    else if(os==2)
-    {
-        cout<<"\n Brand Selected ==> Apple "<<endl;
-    }
-}
-*/
+
+
+
 
 void Features::display_features()
 {
@@ -711,144 +794,242 @@ void Features::display_features()
 }
 
 
-void Features::laptop_suggestions()
+
+
+
+void Features::filewrite()
 {
-   //Suggested Laptops MAc Os and Windows
-cout<<"\n * Suggestions For Laptop ==> \n"<<endl;
+    char fchoice;
+    cout<<"\n \n Do You want to Save your Details ? y(Yes)/n(No)"<<endl;
+    cout<<"\n Enter your Choice : "<<endl;
+    cin>>fchoice;
+
+    if(fchoice=='y'||'Y')
+    {
+        ofstream myfile;
+        myfile.open("saved_details.txt",ios::out|ios::app);
+        myfile<<"\n";
+
+        myfile<<"\n Specifications Selected :";
+        myfile<<"\n";
+        myfile.width(30);
+        myfile.fill('=');
+        myfile<<"\n";
+        myfile<<"\n Selected By : "<<fn<<endl;
+        time_t tt;
+        // Declaring variable to store return value of
+        // localtime()
+        struct tm * ti;
+        // Applying time()
+        time (&tt);
+        // Using localtime()
+        ti = localtime(&tt);
+        myfile<< "Selected on (Day ,Date & Time) = " << asctime(ti);
+
+        if(os==1){
+        myfile<<"\n OS: Windows";
+        if(processor==1)
+        myfile<<"\n Processor ==> Intel i3"<<endl;
+    else if(processor==2)
+        myfile<<"\n Processor ==> Intel i5"<<endl;
+    else if(processor==3)
+        myfile<<"\n Processor ==> Intel i7"<<endl;
+    else if(processor==4)
+        myfile<<"\n Processor ==> Intel i9"<<endl;
+    else if(processor==5)
+        myfile<<"\n Processor ==> Ryzen 5"<<endl;
+    else if(processor==6)
+        myfile<<"\n Processor ==> Ryzen 7"<<endl;
 
 
-   if(os==2 && processor==1 && ram==1 && ssd==1 && graphics_card==2 &&laptop_price==1 )
-   {
-       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+     //RAM
 
-       cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)  "<<endl;
-       cout<<"\n     (13.3 inch, Space Grey, 1.37 kg) "<<endl;
-       cout<<"\n      Ratings - 4.6/5.0"<<endl;
-       cout<<"\n      Rs. 1,54,990"<<endl;
-   }
-   else if(os==2 && processor==1 && ram==1 && ssd==1 && graphics_card==2 && laptop_price==1){
+    if(ram==1)
+        myfile<<"\n RAM ==> 4 GB"<<endl;
+    else if(ram==2)
+        myfile<<"\n RAM ==> 8 GB"<<endl;
+    else if(ram==3)
+        myfile<<"\n RAM ==> 16 GB"<<endl;
+    else if(ram==4)
+        myfile<<"\n RAM ==> 32 GB"<<endl;
 
-      cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+    //graphics card
+    if(graphics_card==1)
+        myfile<<"\n Graphics Card ==> 2 GB"<<endl;
+    else if(graphics_card==2)
+        myfile<<"\n Graphics Card ==> 4 GB"<<endl;
+    else if(graphics_card==3)
+        myfile<<"\n Graphics Card ==> 6 GB"<<endl;
+    else if(graphics_card==4)
+        myfile<<"\n Graphics Card ==> 8 GB"<<endl;
+    else if(graphics_card==5)
+        myfile<<"\n Integrated Graphics Card"<<endl;
+    else if(graphics_card==6)
+        myfile<<"\n No Graphics card Selected."<<endl;
 
-       cout<<"\n\n  *Apple MacBook Pro Core i3 10th Gen (8 GB/256 GB SSD)  "<<endl;
-       cout<<"\n     (13.3 inch, Space Grey, 1.29 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 92,990"<<endl;
-   }
+    //Memory
+    if(memory==1)
+        myfile<<"\n Memory Type ==> SSD"<<endl;
+    else if(memory==2)
+        myfile<<"\n Memory Type ==> HDD"<<endl;
+    else if(memory==3)
+        myfile<<"\n Memory Type ==> Both SSD & HDD"<<endl;
 
-   else if(os==2 && processor==3 &&ram==2&& ssd==2 && graphics_card==2 &&laptop_price==1){
+    //SSD
+    if(ssd==1)
+        myfile<<"\n SSD Capacity ==> 128 GB"<<endl;
+    else if(ssd==2)
+        myfile<<"\n SSD Capacity ==> 256 GB"<<endl;
+    else if(ssd==3)
+        myfile<<"\n SSD Capacity ==> 512 GB"<<endl;
+    else if(ssd==4)
+         myfile<<"\n SSD Capacity ==> 1 TB"<<endl;
 
-        cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
+    //HDD
+    if(hdd==1)
+        myfile<<"\n HDD capacity ==> 128 GB"<<endl;
+    else if(hdd==2)
+        myfile<<"\n HDD capacity ==> 256 GB"<<endl;
+    else if(hdd==3)
+        myfile<<"\n HDD capacity ==> 512 GB"<<endl;
+    else if(hdd==4)
+        myfile<<"\n HDD capacity ==> 1 TB"<<endl;
 
-       cout<<"\n\n  *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  "<<endl;
-       cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 1,99,900"<<endl;
-   }
+    //BOTH
+    if(both==1)
+        myfile<<"\n Memory ==> 128 GB SSD , 1 TB HDD"<<endl;
+    else if(both==2)
+        myfile<<"\n Memory ==> 256 GB SSD , 1 TB HDD"<<endl;
+    else if(both==3)
+        myfile<<"\n Memory ==> 512 GB SSD , 1 TB HDD"<<endl;
 
-   else if(os==2 && processor==2 &&ram==2 && ssd==2 && graphics_card==2 &&laptop_price==1)
-   {
-       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-       cout<<"\n\n  *Apple MacBook Pro Core i5 10th Gen (16 GB/512 GB SSD)  "<<endl;
-       cout<<"\n     (13 inch, Space Grey, 1.4 kg) "<<endl;
-       cout<<"\n      Ratings - 4.9/5.0"<<endl;
-       cout<<"\n      Rs. 1,74,900"<<endl;
-   }
-
-   else if(os==2 && processor==2 &&ram==1 && ssd==2 && graphics_card==2 &&laptop_price==1)
-   {
-       cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-       cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/512 GB SSD)  "<<endl;
-       cout<<"\n     (13.3 inch, Space Grey, 1.4 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 1,69,900"<<endl;
-   }
-
-   else if(os==2 && processor==4 &&ram==2 && ssd==3 &&laptop_price==1 && graphics_card==1)
-
-   {
-        cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-       cout<<"\n\n  *Apple MacBook Pro Core i9 9th Gen (16 GB/1 TB SSD/4 GB Graphics)  "<<endl;
-       cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 2,24,900"<<endl;
-   }
-
-   else if(os==2 && processor==3 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
-         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-      cout<<"\n\n  * Apple MacBook Pro Corei7 9th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
-       cout<<"\n      (16 inch, Space Grey, 2 kg)"<<endl;
-       cout<<"\n       Rating 4.7/5.0"<<endl;
-       cout<<"\n       Rs. 1,99,900"<<endl;
-   }
-   else if(os==2 && processor==4 && ram==2 && ssd==3 && graphics_card==1 && laptop_price==1){
-         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-       cout<<"\n    * Apple MacBook Pro Core i9 9th Gen (16 GB/1 TB SSD/4 GB Graphics)"<<endl;
-       cout<<"\n      (16 inch, Silver, 2 kg)"<<endl;
-       cout<<"\n      Ratings - 4.67/5.0"<<endl;
-       cout<<"\n      Rs.2,24,900"<<endl;
-   }
-   else if(os==2 && processor==3 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
-         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-      cout<<"\n\n  * Apple MacBook Pro Corei7 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
-       cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
-       cout<<"\n       Rating 4/5.0"<<endl;
-       cout<<"\n       Rs. 2,39,900"<<endl;
-   }
-
-   else if(os==2 && processor==2 && ram==2 && ssd==3 && graphics_card==2&& laptop_price==1){
-         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-      cout<<"\n\n  * Apple MacBook Pro Corei5 10th Gen (16 GB/1 TB SSD )"<<endl;
-       cout<<"\n      (13 inch, Space Grey, 1.4 kg)"<<endl;
-       cout<<"\n       Rating 4.9/5.0"<<endl;
-       cout<<"\n       Rs. 1,94,900"<<endl;
-   }
-
-   else if(os==2 && processor==4 && ram==2 && ssd==2 && graphics_card==1 && laptop_price==1){
-         cout<<"\n * Laptop With Your Specifications ==> \n"<<endl;
-
-      cout<<"\n\n  * Apple MacBook Pro Corei9 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
-       cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
-       cout<<"\n       Rating 4.1/5.0"<<endl;
-       cout<<"\n       Rs. 2,09,990"<<endl;
-
-   }
+   //price range
+    if(laptop_price==1)
+       myfile<<"\n Price Range : 20,000 and Below"<<endl;
+    else if(laptop_price==2)
+       myfile<<"\n Price Range : 20,000 - 30,000"<<endl;
+    else if(laptop_price==3)
+       myfile<<"\n Price Range : 30,000 - 40,000"<<endl;
+    else if(laptop_price==4)
+       myfile<<"\n Price Range : 40,000 - 50,000"<<endl;
+    else if(laptop_price==5)
+       myfile<<"\n Price Range : 50,000 - 60,000"<<endl;
+    else if(laptop_price==6)
+       myfile<<"\n Price Range : 60,000 - 70,000"<<endl;
+    else if(laptop_price==7)
+       myfile<<"\n Price Range : 70,000 and Above\n\n"<<endl;
+         myfile.close();
+        }
 
 
-   else
-   {
-       cout<<"\n * Laptop Related to your Specifications ==> \n"<<endl;
 
-       cout<<"\n\n  *Apple MacBook Pro Core i3 10th Gen (8 GB/256 GB SSD)  "<<endl;
-       cout<<"\n     (13.3 inch, Space Grey, 1.29 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 92,990"<<endl;
 
-       cout<<"\n\n  *Apple MacBook Pro Core i5 8th Gen (8 GB/256 GB SSD)  "<<endl;
-       cout<<"\n     (13.3 inch, Space Grey, 1.37 kg) "<<endl;
-       cout<<"\n      Ratings - 4.6/5.0"<<endl;
-       cout<<"\n      Rs. 1,54,990"<<endl;
 
-       cout<<"\n\n  *Apple MacBook Pro Core i7 9th Gen (16 GB/512 GB SSD)  "<<endl;
-       cout<<"\n     (16 inch, Space Grey, 2 kg) "<<endl;
-       cout<<"\n      Ratings - 4.7/5.0"<<endl;
-       cout<<"\n      Rs. 1,99,900"<<endl;
 
-       cout<<"\n\n  * Apple MacBook Pro Corei9 8th Gen (16 GB/512 GB SSD /4 GB Graphics)"<<endl;
-       cout<<"\n      (15.4 inch, Space Grey, 1.83 kg)"<<endl;
-       cout<<"\n       Rating 4.1/5.0"<<endl;
-       cout<<"\n       Rs. 2,09,990"<<endl;
 
-   }
+    else if(os==2){
+         myfile<<"\n OS : MAC";
+
+
+    //processor mac
+    if(processor==1)
+        myfile<<"\n Processor ==> Intel i3"<<endl;
+     else if(processor==2)
+        myfile<<"\n Processor ==> Intel i5"<<endl;
+     else if(processor==3)
+        myfile<<"\n Processor ==> Intel i7"<<endl;
+     else if(processor==4)
+        myfile<<"\n Processor ==> Intel i9"<<endl;
+   //ram mac
+    if(ram==1)
+       myfile<<"\n RAM ==> 8 GB"<<endl;
+    else if(ram==2)
+       myfile<<"\n RAM ==> 16 GB"<<endl;
+   // graphics card
+    if(graphics_card==1)
+    myfile<<"\n Graphics Card ==> 4 GB"<<endl;
+
+    //memory
+    if(memory==1)
+        myfile<<"\n Memory Type ==> SSD"<<endl;
+
+    //SSD
+    if(ssd==1)
+        myfile<<"\n SSD Capacity ==> 256 GB"<<endl;
+    else if(ssd==2)
+        myfile<<"\n SSD Capacity ==> 512 GB"<<endl;
+    else if(ssd==3)
+        myfile<<"\n SSD Capacity ==> 1 TB"<<endl;
+
+    //price
+    if(laptop_price==1)
+        myfile<<"\n Price Range : Rs. 90,000 and above "<<endl;
+          myfile.close();
+    }
+
+    }
+    else if(fchoice=='n'||'N')
+    {
+        exit(0);
+    }
 
 }
+
+
+
+
+
+void Features::fileread()
+{
+    string data;
+    ifstream myFile;
+    int rchoice;
+
+    cout<<"\n Do you want to see some Laptops  ==>"<<endl;
+    cout<<"\n 1.Windows"<<endl;
+    cout<<"\n 2.Apple"<<endl;
+    cout<<"\n 3.No(Exit)"<<endl;
+    cout<<"\n Enter your Choice : "<<endl;
+    cin>>rchoice;
+
+    switch(rchoice)
+    {
+    case 1:
+        myFile.open("windows.txt");
+        myFile>>data;
+
+            while(!myFile.eof())
+            {
+            getline(myFile,data);
+            cout<<"\n";
+            cout<<data;
+            }
+        myFile.close();
+        break;
+
+    case 2:
+        myFile.open("macos.txt");
+        myFile>>data;
+            while(!myFile.eof())
+            {
+            getline(myFile,data);
+            cout<<"\n";
+            cout<<data;
+            }
+        myFile.close();
+
+    case 3:
+        break;
+
+    default:
+        cout<<"\n Enter valid choice !!"<<endl;
+    }
+
+}
+
+
+
+
 
 class Brands {
 
@@ -861,20 +1042,32 @@ void b_display();
 };
 
 void Brands::getdata()
+
 {
- cout<<"Enter the Name of Brands  : "<<endl;
  cin>>b_name;
 }
 
 void Brands::b_display()
 {
-cout<<"\nBrands Selected : \n"<<endl;
+cout<<"\n\n Brands Selected : \n"<<endl;
 cout<<b_name;
 }
+
+
+
+
 
 // Main Function
 int main()
 {
+
+
+    int n,i;
+
+
+    cout.width(82);
+    cout.fill('=');//formatted operation
+    cout<<"\n\n";
     cout<<"\t\t***********************************"<<endl;
     cout<<"\t\t*   Laptop Customization System   *"<<endl;
     cout<<"\t\t***********************************"<<endl;
@@ -889,32 +1082,37 @@ int main()
     f.select_graphics_card();
     f.select_memory();
     f.select_laptop_price();
-    //f.select_laptop_brand();
-   // system("cls");
 
-    int n,i;
+
     Brands b[MAX];
-    cout<<"Enter the Number of Brands : "<<endl;
+    cout<<"\n * Enter the Number of Brands : "<<endl;
     cin>>n;
-    for(i=1;i<=n;i++)
-    {
-    cout << "\n Enter Name of Brand : " << i << ":\n";
-    b[i].getdata();
-    }
-    for(i=1;i<=n;i++)
-    {
-    b[i].b_display();
-    }
+        for(i=1;i<=n;i++)
+        {
+        cout << "\n\n Enter Name of Brand : " << i << ":\n";
+        b[i].getdata();
+        }
+        for(i=1;i<=n;i++)
+        {
+        b[i].b_display();
+        }
+
+
     f.display_features();
-    f.laptop_suggestions();
+    f.filewrite();
+    f.fileread();
 
 
     cout<<"\n\n\n\n * Thank you Visit Again :) !!!! "<<endl;
-    cout<<"\n * Developed By ==> "<<endl;
+    cout<<"\n * Developed By ==>"<<endl;
+    cout<<"\n \n* Chris(SITA-06) \n\n* Varun(SITA-55) \n\n* Vipul(SITA-57) \n\n* Rutwik(SITA-61) \n\n* Piyush(SITA-62)\n"<<endl;
     cout<<"\n   S.Y Information Technology Department !!!!"<<endl;
     cout<<"\n   G.H.Raisoni College of Engineering and Management,Wagholi,Pune .";
     cout<<"\n\n";
 
+    return 0;
+
 }
+
 
 
