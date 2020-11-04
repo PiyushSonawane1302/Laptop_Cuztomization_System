@@ -1105,7 +1105,7 @@ int main()
 
     cout<<"\n\n\n\n * Thank you Visit Again :) !!!! "<<endl;
     cout<<"\n * Developed By ==>"<<endl;
-    cout<<"\n \n* Chris(SITA-06) \n\n* Varun(SITA-55) \n\n* Vipul(SITA-57) \n\n* Rutwik(SITA-61) \n\n* Piyush(SITA-62)\n"<<endl;
+    cout<<"\n * Piyush Sonawane\n"<<endl;
     cout<<"\n   S.Y Information Technology Department !!!!"<<endl;
     cout<<"\n   G.H.Raisoni College of Engineering and Management,Wagholi,Pune .";
     cout<<"\n\n";
